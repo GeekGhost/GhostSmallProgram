@@ -24,3 +24,6 @@
     width: 50%;
     float: left
 }
+.title{
+  display: block
+}

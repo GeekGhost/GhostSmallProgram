@@ -14,11 +14,16 @@ class="{{activeIndex == 3 ?'item_on':''}} default-item">我的</view>
  <view class="weui-navbar-slider" style="transform:translateX({{slideOffset}}px);"></view> 
 </scroll-view>
 <!-- 导航对应的内容 -->
-<swiper current="{{activeIndex}}" class="swiper-box" duration="100" bindchange="bindChange">
-  <swiper-item class="swiper-item">
-    <view class="slide-view">精选</view>
-    <image src="../image/fancy_select.png" class='image_frame'></image>
- </swiper-item>
+<swiper current="{{activeIndex}}" bindchange="bindChange"
+class="swiper-box">
+  <swiper-item>
+    <scroll-view scroll-y="true" class="jingquan">
+      <block wx:for="{{list}}" wx:key="{{list}}">
+        <image src="{{item.childList[0].pic}}"  class="pic"></image> 
+        <text class='title'>{{item.childList[0].title}}</text>
+      </block>
+    </scroll-view>
+  </swiper-item>
   <swiper-item class="swiper-item">
     <view class="slide-view">专题</view>
  </swiper-item>
