@@ -1,68 +1,26 @@
 /**index.wxss**/
 /* ///////////////////////////// */
-.tab{
-  width: 25%;
-  float: left;
-  text-align: center;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-.weui-navbar-slider{
- position: absolute;
- width: 25%;
- height: 2px;
- background: #00bba1;
- bottom: 0px;
- transition: transform .3s;
-}
 page {
- height: 100%;
+ height: 90%;
 }
 view , scroll-view{
  padding: 0px;
  margin: 0px;
 }
-.weui-navbar{
- width: 100%;
- position: fixed;
- border-bottom: 1px solid #00bba1;
- box-sizing: border-box;
- white-space: nowrap; 
- z-index: 100;
- background: white;
-}
-.weui-navbar .default-item{
- /*width:25%;*/
- display: inline-block;
- text-align: center;
- font-size: 32rpx;
- box-sizing: border-box;
- height: 7%;
- padding-bottom: 20rpx;
-}
-.weui-navbar .item_on{
- color: #00bba1;
-}
-
-
- .swiper-box{
- height: 900px;
- border-bottom: 1px solid #d1d1d1;
-}
-.swiper-box .swiper-item{
- text-align: center;
- padding-top: 60rpx;
- height: 100%;
-}
 .pic{
-  width:100%;
-  height: 300rpx；
- 
+  width:90%;
+  height:240rpx;
+  display: block;
+  border: 5rpx solid rebeccapurple;
+}
+
+.title{
+  text-align: center;
+   font-size: 30rpx;
+   line-height: 40rpx;
+   height: 40rpx;
 }
 .jingquan{
-  height: 100%; 
-  text-align: center;
-  width: 98%;
-  margin-left: 1%;
-  margin-top: 80rpx;
+  margin-left: 4%;
+  height:1920rpx;
 }

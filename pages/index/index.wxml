@@ -1,39 +1,8 @@
-<!--index.wxml-->
-<!-- 导航 -->
-<scroll-view class="weui-navbar">
-<block>
-<view class='tab' bindtap="tabClick" id='0' style="width:{{tabW}}px" 
-class="{{activeIndex == 0 ?'item_on':''}} default-item">精选</view>
-<view  class='tab' bindtap="tabClick" id='1' style="width:{{tabW}}px"
-class="{{activeIndex == 1 ?'item_on':''}} default-item">专题</view>
-<view  class='tab' bindtap="tabClick" id='2' style="width:{{tabW}}px"
-class="{{activeIndex == 2 ?'item_on':''}} default-item">发现</view>
-<view  class='tab' bindtap="tabClick" id='3' style="width:{{tabW}}px"
-class="{{activeIndex == 3 ?'item_on':''}} default-item">我的</view>
-</block>
- <view class="weui-navbar-slider" style="transform:translateX({{slideOffset}}px);"></view> 
-</scroll-view>
-<!-- 导航对应的内容 -->
-<swiper current="{{activeIndex}}" bindchange="bindChange"
-class="swiper-box">
-  <swiper-item>
-    <scroll-view scroll-y="true" class="jingquan">
-      <block wx:for="{{list}}" wx:key="{{list}}">
-        <image src="{{item.childList[0].pic}}"  class="pic"></image> 
+
+<scroll-view scroll-y="true" class="jingquan">
+      <view wx:for="{{list}}" wx:key="{{list}}" 
+      bindtap="onclik" data-url="{{item.childList[0].loadURL}}">
+        <image src="{{item.childList[0].pic}}" class="pic"></image>
         <text class='title'>{{item.childList[0].title}}</text>
-      </block>
-    </scroll-view>
-  </swiper-item>
-  <swiper-item class="swiper-item">
-    <view class="slide-view">专题</view>
- </swiper-item>
-  <swiper-item class="swiper-item">
-    <view class="slide-view">发现</view>
- </swiper-item>
- <swiper-item class="swiper-item">
-    <view class="slide-view">我的</view>
- </swiper-item>
-</swiper>
-
-
-
+      </view>
+</scroll-view>

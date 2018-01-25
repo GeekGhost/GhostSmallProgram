@@ -1,0 +1,65 @@
+<!--index.wxml-->
+<!-- 导航 -->
+<scroll-view class="weui-navbar">
+  <block>
+    <view class='tab' bindtap="tabClick" id='0' style="width:{{tabW}}px" class="{{activeIndex == 0 ?'item_on':''}} default-item">精选</view>
+    <view class='tab' bindtap="tabClick" id='1' style="width:{{tabW}}px" class="{{activeIndex == 1 ?'item_on':''}} default-item">专题</view>
+    <view class='tab' bindtap="tabClick" id='2' style="width:{{tabW}}px" class="{{activeIndex == 2 ?'item_on':''}} default-item">发现</view>
+    <view class='tab' bindtap="tabClick" id='3' style="width:{{tabW}}px" class="{{activeIndex == 3 ?'item_on':''}} default-item">我的</view>
+  </block>
+  <view class="weui-navbar-slider" style="transform:translateX({{slideOffset}}px);"></view>
+</scroll-view>
+<!-- 导航对应的内容 -->
+<swiper current="{{activeIndex}}" bindchange="bindChange" class="swiper-box">
+  <swiper-item>
+    <scroll-view scroll-y="true" class="jingquan">
+      <block wx:for="{{list}}" wx:key="{{list}}">
+        <image src="{{item.childList[0].pic}}" class="pic"></image>
+        <text class='title'>{{item.childList[0].title}}</text>
+      </block>
+    </scroll-view>
+  </swiper-item>
+  <swiper-item class="swiper-item">
+    <view class="slide-view">专题</view>
+  </swiper-item>
+  <swiper-item class="swiper-item">
+    <view class="slide-view">发现</view>
+  </swiper-item>
+  <swiper-item class="swiper-item swiper-me">
+    <image src='../image/my_bg_colorful.png' class='bg_header' ></image>
+    <image src='../image/bg_colorful.jpg' class='bg' mode='widthFix'></image>
+     
+      <image src='../image/my_set.png' class='setimg'></image>
+    
+    <view class="jx_card">
+      <view class='viewLeft'></view>
+      <view class='viewCenter'>
+        <view>
+          <image src='../image/my_records.png' class='left_png'></image>
+          <text class='text'>历史</text>
+          <image src='../image/right.png' class='right_png'></image>
+        </view>
+        <view class="line"></view>
+        <view>
+          <image src='../image/my_records.png' class='left_png'></image>
+          <text class='text'>缓存</text>
+          <image src='../image/right.png' class='right_png'></image>
+        </view>
+        <view class="line"></view>
+        <view>
+          <image src='../image/my_collection.png' class='left_png'></image>
+          <text class='text'>收藏</text>
+          <image src='../image/right.png' class='right_png'></image>
+        </view>
+        <view class="line"></view>
+        <view>
+          <image src='../image/my_everyone.png' class='left_png'></image>
+          <text class='text'>主题</text>
+          <image src='../image/right.png' class='right_png'></image>
+        </view>
+        <view class="line"></view>
+      </view>
+      <view class='viewRight'></view>
+    </view>
+  </swiper-item>
+</swiper>

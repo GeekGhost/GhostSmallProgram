@@ -1,0 +1,83 @@
+/**index.wxss**/
+
+view , scroll-view{
+ padding: 0px;
+ margin: 0px;
+}
+.bg{
+  width: 100%;
+  margin-bottom: 0px;
+   display: block;
+}
+
+
+.line{
+  background: white;
+  width: 100%;
+  height: 1px;
+  clear: both;
+}
+
+
+.left_png{
+  height: 40rpx;
+  width: 40rpx;
+  float: left;
+  margin-top: 25rpx;
+  margin-left: 20rpx;
+}
+.text{
+   float: left; 
+   margin-left: 10rpx;
+   font-size: 30rpx;
+   line-height: 80rpx;
+   height: 80rpx;
+}
+.right_png{
+  height: 40rpx;
+  width: 20rpx;
+  float: right;
+  margin-top: 30rpx;
+}
+
+
+.viewLeft{
+  width: 5%;
+   height: 800rpx;
+  float: left;
+}
+.viewCenter{
+   width: 90%;
+      height: 800rpx;
+    float: left;
+
+}
+.viewRight{
+ width: 5%;
+ height: 800rpx;
+ float: left;
+}
+.jx_card{
+  position: absolute;
+  top: 280rpx;
+  width: 100%;
+  border: 0rpx;
+}
+.bg_header{
+  width: 100%;
+  height: 250rpx;
+  border: 0rpx;
+  display: block;
+
+}
+text{
+  color: white
+}
+.setimg{
+  position: absolute;
+  top: 120rpx;
+  width: 80rpx;
+  border: 0rpx;
+  height: 80rpx;
+  right: 50rpx;
+}

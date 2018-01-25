@@ -1,0 +1,37 @@
+<!--index.wxml-->
+<!-- 导航对应的内容 -->
+  <scroll-view>
+    <image src='../image/my_bg_colorful.png' class='bg_header' ></image>
+    <image src='../image/bg_colorful.jpg' class='bg' mode='widthFix'></image>
+    <image src='../image/my_set.png' class='setimg'></image>
+    <view class="jx_card">
+      <view class='viewLeft'></view>
+      <view class='viewCenter'>
+        <view>
+          <image src='../image/my_records.png' class='left_png'></image>
+          <text class='text'>历史</text>
+          <image src='../image/right.png' class='right_png'></image>
+        </view>
+        <view class="line"></view>
+        <view>
+          <image src='../image/my_records.png' class='left_png'></image>
+          <text class='text'>缓存</text>
+          <image src='../image/right.png' class='right_png'></image>
+        </view>
+        <view class="line"></view>
+        <view>
+          <image src='../image/my_collection.png' class='left_png'></image>
+          <text class='text'>收藏</text>
+          <image src='../image/right.png' class='right_png'></image>
+        </view>
+        <view class="line"></view>
+        <view>
+          <image src='../image/my_everyone.png' class='left_png'></image>
+          <text class='text'>主题</text>
+          <image src='../image/right.png' class='right_png'></image>
+        </view>
+        <view class="line"></view>
+      </view>
+      <view class='viewRight'></view>
+    </view>
+</scroll-view>

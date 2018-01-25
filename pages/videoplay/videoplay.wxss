@@ -1,0 +1,4 @@
+/* pages/videoplay.wxss */
+#myVideo{
+  width: 100%
+}

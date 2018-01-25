@@ -1,12 +1,47 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/my/my",
+    "pages/logs/logs",
+    "pages/videoplay/videoplay",
+    "pages/found/found",
+    "pages/zhuanti/zhuanti"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "微影",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color":"#000000",
+     "selectedColor": "#FF0000",
+     "borderStyle": "#00bba1",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "精选",
+        "iconPath":"pages/image/found.png",
+        "selectedIconPath":"pages/image/found_select.png"
+      },
+      {
+        "pagePath": "pages/zhuanti/zhuanti",
+        "text": "专题",
+        "iconPath": "pages/image/special.png",
+        "selectedIconPath": "pages/image/special_select.png"
+      },
+      {
+        "pagePath": "pages/found/found",
+        "text": "发现",
+        "iconPath": "pages/image/fancy.png",
+        "selectedIconPath": "pages/image/fancy_select.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "pages/image/my.png",
+        "selectedIconPath": "pages/image/my_select.png"
+      }
+    ]
   }
 }
